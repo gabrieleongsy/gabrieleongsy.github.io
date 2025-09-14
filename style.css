@@ -98,3 +98,39 @@ footer {
   from { width: 0; }
   to { width: var(--level); }
 }
+
+/* Base button style */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  background: #0b5cff; /* solid blue */
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  background: #7c3aed; /* purple on hover */
+  transform: scale(1.05);
+}
+
+/* Gradient button (special for GitHub) */
+.btn-gradient {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #0b5cff, #7c3aed);
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.btn-gradient:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
