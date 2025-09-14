@@ -1,6 +1,6 @@
 /* Simple clean style */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background: #0b5cff;
+  background: linear-gradient(135deg, #0b5cff, #7c3aed);
   color: white;
   padding: 2rem;
   text-align: center;
@@ -39,9 +39,26 @@ ul {
 a {
   color: #0b5cff;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 a:hover {
-  text-decoration: underline;
+  color: #7c3aed;       /* shifts to purple on hover */
+  transform: scale(1.05); /* slightly enlarges the link */
+}
+
+/* Fancy button-like resume link */
+#links a:last-child {
+  display: inline-block;
+  background: linear-gradient(135deg, #0b5cff, #7c3aed);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+#links a:last-child:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
 }
 
 footer {
